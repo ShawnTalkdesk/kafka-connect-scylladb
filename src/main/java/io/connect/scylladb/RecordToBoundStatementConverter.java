@@ -180,7 +180,7 @@ class RecordToBoundStatementConverter extends RecordConverter<RecordToBoundState
       Schema schema,
       Map value
   ) {
-    state.statement = state.statement.setMap(fieldName, value, Object.class, Object.class);
+    state.statement = state.statement.setMap(fieldName, value, String.class, String.class);
     state.parameters++;
   }
 
